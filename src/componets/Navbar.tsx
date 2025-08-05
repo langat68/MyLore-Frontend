@@ -1,6 +1,6 @@
 import { Menu, X, Sparkles } from "lucide-react";
 import { useState } from "react";
-
+import "../styling/Navbar.scss"
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
