@@ -1,4 +1,5 @@
 import { Sparkles, ArrowRight } from "lucide-react";
+import "../styling/CallToAction.scss"
 
 const CallToAction = () => {
     return (

@@ -1,4 +1,5 @@
 import { BookOpen, Heart, Headphones, Save } from "lucide-react";
+import "../styling/HowItWorks.scss"
 
 const HowItWorks = () => {
     const steps = [

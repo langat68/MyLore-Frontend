@@ -1,6 +1,6 @@
 import { Sparkles, BookOpen, Heart } from "lucide-react";
 //import heroImage from "@/assets/hero-magical-books.jpg";
-
+import "../styling/Hero.scss"
 const Hero = () => {
     return (
         <section id="home" className="hero-section">

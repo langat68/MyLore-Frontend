@@ -1,0 +1,65 @@
+$primary-color: #6c5ce7;
+$secondary-color: #a29bfe;
+$background-gradient: linear-gradient(135deg, #dfe6e9, #f1f2f6);
+$text-color: #2d3436;
+$overlay-bg: rgba(255, 255, 255, 0.7);
+$btn-hover-bg: darken($primary-color, 10%);
+
+.cta-section {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 2rem;
+    background: $background-gradient;
+    text-align: center;
+
+    .cta-background {
+        position: absolute;
+        inset: 0;
+        background: $overlay-bg;
+        backdrop-filter: blur(4px);
+        z-index: 1;
+    }
+
+    .cta-sparkles {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        pointer-events: none;
+
+        .sparkle {
+            position: absolute;
+            color: $secondary-color;
+            opacity: 0.6;
+            animation: float 6s infinite ease-in-out;
+
+            &.sparkle-1 {
+                top: 10%;
+                left: 15%;
+                animation-delay: 0s;
+            }
+
+            &.sparkle-2 {
+                top: 30%;
+                right: 10%;
+                animation-delay: 1s;
+            }
+
+            &.sparkle-3 {
+                bottom: 20%;
+                left: 20%;
+                animation-delay: 2s;
+            }
+
+            &.sparkle-4 {
+                bottom: 10%;
+                right: 15%;
+                animation-delay: 3s;
+            }
+        }
+    }
+
+    .cta-content {
+        position: relative;
+        z-index: 3
+    }
+}
