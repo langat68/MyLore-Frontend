@@ -1,6 +1,7 @@
 import { Menu, X, Sparkles } from "lucide-react";
 import { useState } from "react";
 import "../styling/Navbar.scss"
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -26,6 +27,7 @@ const Navbar = () => {
                                 {link.name}
                             </a>
                         ))}
+                        <a href="#login" className="login-btn">Login</a>
                         <button className="start-story-btn">Start Story</button>
                     </div>
 
@@ -43,6 +45,9 @@ const Navbar = () => {
                                 {link.name}
                             </a>
                         ))}
+                        <a href="#login" className="login-btn-mobile" onClick={() => setIsOpen(false)}>
+                            Login
+                        </a>
                         <button className="start-story-btn-mobile">Start Story</button>
                     </div>
                 )}
